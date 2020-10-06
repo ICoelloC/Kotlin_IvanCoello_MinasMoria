@@ -2,9 +2,9 @@ package personajes
 
 class Mago:Personaje {
 
-    protected var poderVara: Int
+    var poderVara: Int
 
-    constructor(nomre:String, poderVara: Int, vivo:Boolean) : super() {
+    constructor(nombre:String, poderVara: Int, vivo:Boolean) : super() {
         this.nombre = nombre
         this.poderVara = poderVara
         this.vivo = vivo

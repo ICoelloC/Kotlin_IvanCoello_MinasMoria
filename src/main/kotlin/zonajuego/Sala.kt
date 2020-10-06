@@ -7,27 +7,20 @@ import personajes.Mago
 
 abstract class Sala {
 
-    protected var energíaMalignaSala = 0
-    protected var numFlechasSala = 0
-    protected var numEnemigos = 0
+    protected var energiaMalignaSala :Int
+    protected var numFlechasSala:Int
+    protected var numEnemigos :Int
 
-    enum class TipoSala {
+    protected enum class TipoSala {
         MAGICA, ACCION, HABILIDAD
     }
 
-    protected var tipoSala: TipoSala
-    protected var mago = Mago("Gándalf", 30, true)
-    protected var elfo =  Elfo("Légolas", 30, true)
-    protected var hobbit = Hobbit("Frodo", true, true)
+    protected var tipoSala: TipoSala? = null
 
-    constructor( energíaMalignaSala: Int, numFlechasSala: Int, numEnemigos: Int, tipoSala: TipoSala, mago: Mago, elfo: Elfo, hobbit: Hobbit ) {
-        this.energíaMalignaSala = energíaMalignaSala
+    constructor( energiaMalignaSala: Int, numFlechasSala: Int, numEnemigos: Int) {
+        this.energiaMalignaSala = energiaMalignaSala
         this.numFlechasSala = numFlechasSala
         this.numEnemigos = numEnemigos
         this.tipoSala = tipoSala
-        this.mago = mago
-        this.elfo =  elfo
-        this.hobbit = hobbit
     }
-
 }
