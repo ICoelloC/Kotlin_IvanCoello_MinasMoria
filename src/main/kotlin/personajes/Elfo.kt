@@ -4,8 +4,10 @@ class Elfo:Personaje {
 
     protected var numFlechas:Int
 
-    constructor(numFlechas: Int) : super() {
+    constructor(nomre:String, numFlechas: Int, vivo:Boolean) : super() {
+        this.nombre = nombre
         this.numFlechas = numFlechas
+        this.vivo = vivo
     }
 
     fun lanzarFlecha(): Int {

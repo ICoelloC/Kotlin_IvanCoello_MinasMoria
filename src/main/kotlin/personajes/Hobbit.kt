@@ -4,8 +4,10 @@ class Hobbit: Personaje {
 
     protected  var anilloPuesto:Boolean
 
-    constructor(anilloPuesto: Boolean) : super() {
+    constructor(nomre:String, anilloPuesto: Boolean, vivo:Boolean) : super() {
+        this.nombre = nombre
         this.anilloPuesto = anilloPuesto
+        this.vivo = vivo
     }
 
     fun ponerseAnillo() {

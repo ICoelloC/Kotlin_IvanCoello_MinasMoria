@@ -4,8 +4,10 @@ class Mago:Personaje {
 
     protected var poderVara: Int
 
-    constructor(poderVara: Int) : super() {
+    constructor(nomre:String, poderVara: Int, vivo:Boolean) : super() {
+        this.nombre = nombre
         this.poderVara = poderVara
+        this.vivo = vivo
     }
 
     fun recargarVara(energíaIntroducida: Int) {
