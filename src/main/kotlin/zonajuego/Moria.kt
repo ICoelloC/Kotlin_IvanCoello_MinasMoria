@@ -87,6 +87,8 @@ class Moria: Sala {
                     }
                     if (this.elfo.vivo) {
                         println(this.elfo.nombre + " HA SOBREVIVIDO, LOS HÉROES PASAN DE SALA")
+                    }else{
+                        break
                     }
                 } else {
                     val probabilidadPonerseAnillo = (Math.random() * 101).toInt()
