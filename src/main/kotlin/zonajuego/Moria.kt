@@ -5,16 +5,25 @@ import personajes.Hobbit
 import personajes.Mago
 
 
-class Moria: Sala {
+class Moria {
 
     var mago:Mago
     var elfo:Elfo
     var hobbit:Hobbit
+    var energiaMalignaSala: Int
+    var numFlechasSala: Int
+    var numEnemigos: Int
 
-    constructor( energiaMalignaSala: Int, numFlechasSala: Int, numEnemigos: Int, mago: Mago, elfo: Elfo, hobbit: Hobbit  ) : super(energiaMalignaSala, numFlechasSala, numEnemigos) {
-        this.energiaMalignaSala = energiaMalignaSala
-        this.numFlechasSala = numFlechasSala
-        this.numEnemigos = numEnemigos
+    protected enum class TipoSala {
+        MAGICA, ACCION, HABILIDAD
+    }
+
+    protected var tipoSala: TipoSala? = null
+
+    constructor(  mago: Mago, elfo: Elfo, hobbit: Hobbit ) {
+        this.energiaMalignaSala = (Math.random()*20).toInt()
+        this.numFlechasSala = 0
+        this.numEnemigos = (Math.random()*6).toInt()
         this.mago = mago
         this.elfo = elfo
         this.hobbit = hobbit

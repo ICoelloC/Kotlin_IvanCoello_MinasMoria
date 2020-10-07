@@ -11,7 +11,7 @@ fun main(){
     val elfo = Elfo("Légolas", 15, true)
     val hobbit = Hobbit("Frodo", true, true)
 
-    val minasMoria = Moria(0,0,0,mago,elfo,hobbit)
+    val minasMoria = Moria(mago,elfo,hobbit)
 
     minasMoria.simulacion()
 }
