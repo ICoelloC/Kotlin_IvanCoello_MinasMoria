@@ -48,6 +48,7 @@ class Moria {
                 3 -> tipoSala = TipoSala.HABILIDAD
             }
             if (tipoSala === TipoSala.MAGICA) {
+                println(this.mago.nombre+" TIENE "+this.mago.verPoderVara()+" EN LA VARA")
                 if (this.mago.poderVara == energiaMalignaSala) {
                     val probabilidadVictoria = (Math.random() * 101).toInt()
                     if (probabilidadVictoria < 40) {

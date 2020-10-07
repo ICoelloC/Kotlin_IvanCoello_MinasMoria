@@ -10,8 +10,8 @@ class Mago:Personaje {
         this.vivo = vivo
     }
 
-    fun recargarVara(energíaIntroducida: Int) {
-        poderVara = poderVara + energíaIntroducida
+    fun recargarVara(energiaIntroducida: Int) {
+        this.poderVara -= energiaIntroducida
     }
 
     fun verPoderVara(): Int {
