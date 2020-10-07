@@ -34,7 +34,7 @@ class Moria {
         var contSalas = 0
         for (i in 0..35) {
             println("**********************************SALA nº" + (i + 1) + "**********************************")
-            val numAleatorioSala = (Math.random() * 4).toInt()
+            val numAleatorioSala = (Math.random() * 3+1).toInt()
             when (numAleatorioSala) {
                 1 -> {
                     tipoSala = TipoSala.MAGICA
