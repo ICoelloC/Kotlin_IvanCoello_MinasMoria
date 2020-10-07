@@ -5,5 +5,3 @@
 
 ## Autor:
         Iván Coello Cortés
-
-### Descripción del ejercicio:
